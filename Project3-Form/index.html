@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <title>Project 3</title>
+</head>
+<body>
+    <form action="index.html" method="post">
+
+    <div class="container centerText">
+            <h1>THE CODE REVIEW</h1>
+            <h2>Sign-up for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+            <hr>
+            <hr>
+        </div> 
+
+       
+        <div id="bigScreen">
+        <fieldset class="container">
+            <legend>Contact Information</legend>
+                <div class="container border lineHeight">
+                    <div>
+                    <div class ="divide">
+                        <label for ="name">Full Name</label>
+                        <input required type="text" id="name" name="user_name" placeholder="Required" class="rightRequired flex">
+                    </div>
+                    
+                    <div class ="divide">
+                        <label for="email">Email Address</label>
+                        <input required type="email" id="email" name="user_email" placeholder="Required" class="rightRequired flex">
+                    </div>
+
+                    <div class ="divide">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="user_phone" class="flex">
+                    </div>
+
+                    <div class ="divide">
+                        <label for="address">Street Address</label>
+                        <input type="text" id="address" name="user_address" class="flex">
+                    </div>
+
+                    <div class ="divide">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="user_city" class="flex">
+                    </div>
+
+                    <div class ="divide">
+                        <label for="state">State</label>
+
+                        <select id="state" name="user_state">
+                            <!-- I only put some states so that the content is not too long -->
+                            <option>Choose State</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                        </select>
+                    </div>
+
+                    <div class ="divide">
+                        <label for ="zip">Zip Code</label>
+                        <input type="text" id="zip" name="user_zip" class="flex">
+                    </div>
+                </div>
+                    <hr>
+                </div>
+        </fieldset>  
+
+        <fieldset class="container">
+            <legend>Newsletter</legend>
+                <div class="container lineHeight">
+                    <label>Select the newsletters you would like to receive:</label>
+                    <div>
+                        
+                        <input type="checkbox" id="htmlReceive" value="htmlNews" name="user_htmlReceive">&nbsp;&nbsp;<label for ="htmlReceive">HTML News</label> <br>
+
+                        
+                        <input type="checkbox" id="cssReceive" value="cssNews" name="css_htmlReceive">&nbsp;&nbsp;<label for ="cssReceive">CSS News</label><br>
+
+                        
+                        <input type="checkbox" id="javascriptReceive" value="javascriptNews" name="user_javascriptReceive">&nbsp;&nbsp;<label for ="javascriptReceive">JavaScript News</label><br>
+                    </div>
+                    <label>Newsletter format</label>
+                    <div>
+                        
+                        <input type="radio" id ="htmlFormat" value="htmlOfFormat" name="user">&nbsp;&nbsp;<label for="htmlFormat">HTML</label><br>
+
+                        
+                        <input type="radio" id ="plainText" value="getText" name="user">&nbsp;&nbsp;<label for="plainText">Plain text</label><br>
+                    </div>
+                    <label>Other topics you'd like to hear about</label>
+                    <textarea id="text" name="user_text"></textarea>
+                </div>   
+        </fieldset>
+    </div>
+          
+        <div class ="bigSignUp">
+            <div class ="buttonSignUp">
+                    <button type="submit" id="signUp">Sign Up</button>
+            </div>
+        </div>   
+    </form>
+
+    <footer>Copyright The Code Review</footer>
+</body>
+</html>
