@@ -1,18 +1,15 @@
 body {
-    background: linear-gradient(to top, #397584, #802525);  
+    background: linear-gradient(to top, #397584, #802525); 
+    background-attachment: fixed; 
     font-family: 'Lato', sans-serif;
+    touch-action: none;
 }
 /* Page-intro */
 .firstPage {
-  height: 100vh;
-  min-height:500px;
-  background-image: url('dark-blue.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  touch-action: none;
 }
 .firstPage-padding {
-  padding-top:50vh;
+  padding-top:35vh;
 }
 .downArrowCenter {
   text-align: center;
@@ -64,3 +61,16 @@ hr {
 .phone-number {
     text-align: end;
   }
+
+
+  /* Tablet Screen */
+  @media (min-width: 768px) and (max-width: 991px) { 
+    .medium-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .medium-grid-height {
+      height:425px;
+    }
+  }
+  

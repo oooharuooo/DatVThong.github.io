@@ -13,15 +13,32 @@
     <title>Dat's Portfolio</title>
   </head>
   <body class="mb-2">
-    <div class="firstPage mb-2">
+    <!-- <div class="firstPage mb-2">
         <div class="container firstPage-padding">
             <h1 class="p-3 mb-2 bg-dark text-white text-center">Welcome to My Page</h1>
             <p class="p-3 mb-2 bg-dark text-white text-center">Click the blue arrow below at 100%</p>
-            <div class="progress"style="height: 50px;">
+            <div class="progress" style="height: 50px;">
                 <div id="dynamic" class="progress-bar bg-info" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
                     <span id="current-progress"></span>
                 </div>
             </div>
+        </div>
+    </div> -->
+
+    <div class="card bg-dark text-white">
+        <img class="card-img" style="height:100vh" src="dark-blue.jpg" alt="Card image">
+        <div class="card-img-overlay">
+            <div class="firstPage mb-2">
+                <div class="container firstPage-padding">
+                    <h1 class="p-3 mb-2 bg-dark text-white text-center">Welcome to My Page</h1>
+                    <p class="p-3 mb-2 bg-dark text-white text-center">Click the blue arrow below at 100%</p>
+                    <div class="progress" style="height: 50px;">
+                        <div id="dynamic" class="progress-bar bg-info" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                            <span id="current-progress"></span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
         </div>
     </div>
 
@@ -30,11 +47,12 @@
     <header id='main-page'>
         <div class ='container' data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
+        data-aos-delay="50"
         data-aos-duration="2000">
             <!-- Nav bar -->
             <nav class="navbar navbar-expand-lg navbar navbar-light mb-1" style="background: linear-gradient(to left, #3b99ff, #dc3545);">
                 <a class="navbar-brand" href="#">
-                    <img src="letterD.png" alt="letterD" loading="lazy" height="100px">
+                    <img src="letterD.png" alt="letterD" loading="lazy" height="100">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -76,24 +94,24 @@
                           <div class="row">
                             <div class="col-sm">
                               <div class="d-flex flex-column">
-                                  <div class="p-2"><img src="imgs/Html&Css&Js.png" width="150px"></div>
+                                  <div class="p-2"><img src="imgs/Html&Css&Js.png" alt ='html-Css-Js' width="150"></div>
                                 </div>
                             </div>
                             <div class="col-sm align-self-center">
                               <div class="d-flex flex-column">
                                   <div class="p-2">
-                                        <img src="imgs/jquery-horizontal.svg" alt = 'Jquery' width="70px">
-                                        <img src="imgs/getbootstrap-icon.svg" alt = 'Bootstrap' width="50px">
-                                        <img src="imgs/sass.svg" alt = 'Sass' width="50px">
+                                        <img src="imgs/jquery-horizontal.svg" alt = 'Jquery' width="70">
+                                        <img src="imgs/getbootstrap-icon.svg" alt = 'Bootstrap' width="50">
+                                        <img src="imgs/sass.svg" alt = 'Sass' width="50">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm align-self-center">
                                 <div class="d-flex flex-column">
                                     <div class="p-2">
-                                        <img src="imgs/git-scm-icon.svg" alt = 'Git'  width="50px">
-                                        <img src="imgs/icons8-github.svg" alt = 'Github'  width="50px">
-                                        <img src="imgs/w3_svg-official.svg" alt = 'SVG' width="50px">
+                                        <img src="imgs/git-scm-icon.svg" alt = 'Git'  width="50">
+                                        <img src="imgs/icons8-github.svg" alt = 'Github'  width="50">
+                                        <img src="imgs/w3_svg-official.svg" alt = 'SVG' width="50">
                                     </div>
                                   </div>
                               </div>
@@ -105,10 +123,10 @@
             <!-- Projects -->
             <div class="container" data-aos="fade-right" id='projects'>
                 <h1 class="display-4 text-center text-light">Projects</h1>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
+                <div class="row medium-grid">
+                    <div class="col-lg-4">
                         <div class="card mb-3 zoom-effect">
-                            <img src="imgs/projectIMG/desktop-form.png" height="150px" class="card-img-top" alt="form">
+                            <img src="imgs/projectIMG/desktop-form.png" height="150" class="card-img-top" alt="form">
                             <div class="card-body">
                                 <h5 class="card-title">Responsive Form</h5>
                                 <div class="d-flex flex-row justify-content-center btn-dark">
@@ -123,9 +141,9 @@
                             </div>
                         </div>
                     </div>
-                  <div class="col-lg-4 col-md-6">
+                  <div class="col-lg-4">
                     <div class="card mb-3  zoom-effect">
-                        <img src="imgs/projectIMG/game-show-app.png" class="card-img-top" height ='150px' alt="Gameshow">
+                        <img src="imgs/projectIMG/game-show-app.png" class="card-img-top" height ='150' alt="Gameshow">
                         <div class="card-body">
                             <h5 class="card-title">Gameshow-app</h5>
                             <div class="d-flex flex-row justify-content-center btn-dark">
@@ -141,7 +159,7 @@
                         </div>
                     </div>
                   </div>
-                  <div class="col-lg col-md-6">
+                  <div class="col-lg">
                     <div class="card mb-3 zoom-effect">
                         <img src="imgs/projectIMG/photo-gallery.png" class="card-img-top" alt="photoGallery">
                         <div class="card-body">
@@ -160,7 +178,7 @@
                         </div>
                     </div>
                   </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4">
                         <div class="card mb-3 zoom-effect">
                             <img src="imgs/projectIMG/sass-project.png" class="card-img-top" alt="sass-project">
                             <div class="card-body">
@@ -178,7 +196,7 @@
                             </div>
                         </div>
                     </div>
-                  <div class="col-lg-4 col-md-6">
+                  <div class="col-lg-4">
                     <div class="card mb-3 zoom-effect">
                         <img src="imgs/projectIMG/WebAPP.png" class="card-img-top" alt="WebAPP">
                         <div class="card-body">
@@ -197,8 +215,8 @@
                         </div>
                     </div>
                   </div>
-                  <div class="col-lg col-md-6">
-                    <div class="card mb-3 zoom-effect">
+                  <div class="col-lg">
+                    <div class="card mb-3 zoom-effect medium-grid-height">
                         <img src="imgs/projectIMG/WebAPI.png" class="card-img-top" alt="WebAPI">
                         <div class="card-body">
                             <h5 class="card-title">WebAPI</h5>
@@ -245,26 +263,31 @@
                 <!-- Social Media -->
                 <hr/>
                 <ul class="nav nav-pills justify-content-between">
-                    <li class="nav-item"> <p>&copy; Copyright 2020 by Dat V Thong</p></li>
-                    <ul class="nav nav-pills flex-nowrap">
-                        <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="imgs/linkedin.svg" alt="LinkedIn" class="img-thumbnail padding-width"></a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="https://github.com/oooharuooo"><img src="imgs/icons8-github.svg" alt="Github" class="img-thumbnail padding-width"></a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="mailto:haruthong@gmail.com"><img src="imgs/icons8-gmail.svg" alt="Gmail" class="img-thumbnail padding-width"></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Contact"><img src="imgs/phone.svg" alt="Phone" class="img-thumbnail phone-image padding-width"></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="imgs/portfolio.svg" alt="Resume" class="img-thumbnail padding-width"></a>
-                    </ul>
+                    <li class="nav-item"> 
+                        <p>&copy; Copyright 2020 by Dat V Thong</p>
+                    </li>
+                    <li>
+                        <ul class="nav nav-pills flex-nowrap">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="imgs/linkedin.svg" alt="LinkedIn" class="img-thumbnail padding-width"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="https://github.com/oooharuooo"><img src="imgs/icons8-github.svg" alt="Github" class="img-thumbnail padding-width"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mailto:haruthong@gmail.com"><img src="imgs/icons8-gmail.svg" alt="Gmail" class="img-thumbnail padding-width"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Contact"><img src="imgs/phone.svg" alt="Phone" class="img-thumbnail phone-image padding-width"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="imgs/portfolio.svg" alt="Resume" class="img-thumbnail padding-width"></a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul><!--/ Social Media -->
                 <p class ='phone-number'>619-731-4966</p>
-                <a class="nav-link text-center" href="#main-page"><img src="imgs/top.svg" alt="topArrow" width ='20px'></a>
+                <a class="nav-link text-center" href="#main-page"><img src="imgs/top.svg" alt="topArrow" width ='20'></a>
             </div>
         </footer> <!--/Footer-->
     </div>

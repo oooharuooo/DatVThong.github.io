@@ -22,7 +22,7 @@ $(function() {
             firstPage.appendChild(arrowButton);
             displayFunction();
         }
-    }, 200);
+    }, 0);
   });
 
 //Function to show hidden pages
@@ -30,6 +30,7 @@ const displayFunction = () => {
     const downArrow = document.querySelector('.downArrow');    
     downArrow.addEventListener('click',() => {
         hiddenPage.style.visibility = 'visible';
+        AOS.refresh();
     })
 }
 
@@ -57,3 +58,4 @@ phoneNumber.style.display = 'none';
 phoneImage.addEventListener('mouseover',() => {
     phoneNumber.style.display = 'block';
 })
+
