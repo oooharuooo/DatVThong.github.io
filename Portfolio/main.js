@@ -58,4 +58,3 @@ phoneNumber.style.display = 'none';
 phoneImage.addEventListener('mouseover',() => {
     phoneNumber.style.display = 'block';
 })
-

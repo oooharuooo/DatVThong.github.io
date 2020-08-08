@@ -2,11 +2,9 @@ body {
     background: linear-gradient(to top, #397584, #802525); 
     background-attachment: fixed; 
     font-family: 'Lato', sans-serif;
+    touch-action: pan-y;
 }
 /* Page-intro */
-.firstPage {
-  touch-action: none;
-}
 .firstPage-padding {
   padding-top:35vh;
 }
