@@ -1,0 +1,36 @@
+@mixin block-display (
+    $disp:block,
+    $l-margin:auto,
+    $r-margin:auto,) {
+        display: $disp;
+        margin-left: $l-margin;
+        margin-right: $r-margin;
+        
+    }
+
+@mixin width-height-display(
+    $t-margin:10px,
+    $m-width:100%,
+    $m-height:null,
+    $pad:null,) {
+        margin-top: $t-margin;
+        max-width: $m-width;
+        max-height: $m-height;
+    }
+
+
+/* ============================================= */
+/*              Button-color                   */
+/* ============================================= */
+
+@mixin button-color{
+    @each $button,$color in $buttons {
+        .#{$button} {
+          background-color: $color;
+          transition: background-color .5s ease-in;
+          &:hover {
+            background-color: lighten($color,15%);
+          }
+        }
+      }
+    }

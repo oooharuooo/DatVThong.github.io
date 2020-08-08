@@ -1,0 +1,58 @@
+.main-container {
+    background-color:#ece9ecd4;
+    grid-area: main;
+}
+
+.dashBoard {
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-area: dashboard;
+}
+
+.dashBoard h2 {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.flex-searchBar {
+    display:flex;
+    background-color:#e8e2e2c9;
+    justify-content: flex-end;
+}
+.search-bar {
+    align-self: center;
+}
+
+@media (min-width: 768px) {
+    .main-container {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        'dashboard dashboard'
+        'alert alert'
+        'traffic traffic'
+        'daily mobile'
+        'social social'
+        'newMember recently'
+        'message settings';
+    }
+    .headerMember {
+        justify-content:flex-end;
+        margin-right: 30px;
+    }
+    .headerMember span {
+        margin-right:30px;
+    }
+    .dropdown{
+        margin-right: 10px ;
+    }
+}
+@media (min-width: 1024px) {
+    .search-bar input {
+        width: 70vh;
+    }
+    .message , .settings {
+        width:70%;
+        justify-self: center;
+    }
+}

@@ -1,0 +1,24 @@
+.nav {
+    background-color:#5566a0;
+    grid-area: nav;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.padding-left {
+    padding-left: 20px;
+}
+
+@media (min-width: 768px) {
+    .nav {
+        display:block;
+    }
+    .fixed-nav {
+        position: fixed;
+        display: grid;
+    }
+    .padding-left {
+        padding-left: 8px;
+    }
+}
