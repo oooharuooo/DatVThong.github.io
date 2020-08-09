@@ -4,10 +4,7 @@ lightbox.option({
   wrapAround: true,
 })
 
-
-        
         // SEARCH-BOX FUNCTION
-
   $('.search-box').on('keyup',function() {
       let images = $('.filter a');
       let search = $('.search-box').val().toLowerCase();
@@ -15,9 +12,9 @@ lightbox.option({
             let searchAlt = images[i].getAttribute('title').toLowerCase();
             let searchTitle = images[i].getAttribute('data-title').toLowerCase();
               if (searchAlt.indexOf(search) > -1 || searchTitle.indexOf(search) > -1) {
-                  images[i].style.display = '';
+                  images[i].parentNode.style.display = 'block'
               }else {
-                  images[i].style.display = 'none';
+                  images[i].parentNode.style.display = 'none';
               }
             }    
       });
