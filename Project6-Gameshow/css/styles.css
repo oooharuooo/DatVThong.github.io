@@ -194,16 +194,9 @@ button {
   h2 {
     font-size: var(--font-size-extra-medium);
   }
- .section ul {
-    display: flex;
-    place-content: center;
-    flex-wrap: wrap;
-  }
   .letter {
-    height:40px;
-    width: 40px;
-    margin-bottom: 5px;
-    padding: 10px 1px 0 1px
+    height:30px;
+    padding: 0px;
   }
   .keyrow button {
     padding: 0.5rem;
