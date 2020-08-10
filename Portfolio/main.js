@@ -22,7 +22,7 @@ $(function() {
             firstPage.appendChild(arrowButton);
             displayFunction();
         }
-    }, 0);
+    }, 200);
   });
 
 //Function to show hidden pages
