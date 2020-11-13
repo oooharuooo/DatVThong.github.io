@@ -1,5 +1,10 @@
 .main-container {
     text-align:center;
+    padding-top:100px;
+    padding-bottom: 200px;
+    background-color:$color-primary;
+    clip-path: polygon(0 0, 100% 0%, 100% 96%, 0% 100%);
+
     &-title {
         font-size:4rem;
         color:$color-title;
@@ -24,7 +29,9 @@
     }
     &-detail {
         font-size:1.25rem;
-
+        &-skills p {
+            color:$color-title;
+        }
         &-link {
             display:flex;
             justify-content: space-evenly;

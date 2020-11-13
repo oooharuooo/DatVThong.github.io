@@ -44,7 +44,7 @@ window.addEventListener("scroll",() => {
 
 const scrollToTop = () => scrollEffect(0);
 const scrollToProject = () => scrollEffect(1000);
-const scrollToContact = () => scrollEffect(4000);
+const scrollToContact = () => scrollEffect(4200);
 
 // Scrolling effect
 const scrollEffect= (number) => {

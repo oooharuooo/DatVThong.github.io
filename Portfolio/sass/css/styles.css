@@ -312,8 +312,7 @@ template {
   display: none; }
 
 body {
-  font-family: 'Bellota', cursive;
-  background-color: #efcccc; }
+  font-family: 'Bellota', cursive; }
 
 p {
   color: #476284; }
@@ -379,6 +378,7 @@ li {
   left: 92%;
   top: 90%; }
   .toTopButton.active {
+    z-index: 10001;
     opacity: 1; }
     .toTopButton.active:hover {
       transition: transform 0.7s;
@@ -522,7 +522,11 @@ video {
   width: 50px; }
 
 .main-container {
-  text-align: center; }
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  background-color: #efcccc;
+  clip-path: polygon(0 0, 100% 0%, 100% 96%, 0% 100%); }
   .main-container-title {
     font-size: 4rem;
     color: #496920; }
@@ -543,6 +547,8 @@ video {
     color: #476284; }
   .project-container-detail {
     font-size: 1.25rem; }
+    .project-container-detail-skills p {
+      color: #496920; }
     .project-container-detail-link {
       display: flex;
       justify-content: space-evenly;
