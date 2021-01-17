@@ -54,6 +54,9 @@ li {
 .smallButtonEffect {
 	font-size: 1rem;
 	padding: 0px 20px;
+	@media (max-width: 320px) {
+		font-size: 0.8rem;
+	}
 }
 
 .toTopButton {
@@ -74,19 +77,19 @@ li {
 
 .filter-container {
 	display: flex;
-    justify-content: space-evenly;
-    
-	padding-bottom: 2rem;
-    padding-left: 0;
-    
-    text-transform: uppercase;
-    font-weight: 900;
+	justify-content: space-evenly;
 
-    li:hover,
-    .active {
+	padding-bottom: 2rem;
+	padding-left: 0;
+
+	text-transform: uppercase;
+	font-weight: 900;
+
+	li:hover,
+	.active {
 		transition: transform 0.7s;
-        transform: translateY(-5px) scale(1.2);
-        background-color: whitesmoke
+		transform: translateY(-5px) scale(1.2);
+		background-color: whitesmoke;
 	}
 }
 

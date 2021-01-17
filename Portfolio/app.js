@@ -50,7 +50,7 @@ window.addEventListener("scroll", () => {
 });
 
 const scrollToTop = () => scrollEffect(0);
-const scrollToProject = () => scrollEffect(1000);
+const scrollToProject = () => scrollEffect(700);
 const scrollToContact = () => scrollEffect(4200);
 
 // Scrolling effect
@@ -82,3 +82,7 @@ tabsFilter.forEach((tab) => {
 		});
 	});
 });
+
+// currentYear
+const currentYear = document.querySelector(".currentYear");
+currentYear.append((new Date().getFullYear()));

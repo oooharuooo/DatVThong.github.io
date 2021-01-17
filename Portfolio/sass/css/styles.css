@@ -370,6 +370,9 @@ li {
 .smallButtonEffect {
   font-size: 1rem;
   padding: 0px 20px; }
+  @media (max-width: 320px) {
+    .smallButtonEffect {
+      font-size: 0.8rem; } }
 
 .toTopButton {
   position: fixed;
@@ -504,6 +507,9 @@ header {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between; }
+    @media (min-width: 768px) {
+      header .nav-menu {
+        width: 100%; } }
     header .nav-menu input {
       display: none; }
       header .nav-menu input + label {
