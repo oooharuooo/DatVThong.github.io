@@ -1,70 +1,97 @@
 a:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 li {
-    list-style: none;
+	list-style: none;
 }
 
-.buttonEffect{
-    position: relative;
-    display: inline-block;
-    font-size: 2rem;
-    text-decoration: none;
-    color: $color-primary;
-    border: 2px solid gray;
-    background-color:gray;
-    padding: 15px 30px;
+.buttonEffect {
+	position: relative;
+	display: inline-block;
+	font-size: 2rem;
+	text-decoration: none;
+	color: $color-primary;
+	border: 2px solid gray;
+	background-color: gray;
+	padding: 15px 30px;
 
-    &:hover {
-        @include hoverEffect;
-    }
+	&:hover {
+		@include hoverEffect;
+	}
 
-    &:before {
-        @include beforeAfter(6px,-2px,scaleY(1),calc(100% + 4px),calc(100% - 12px));
-    }
-    &:hover:before {
-        transform: scaleY(0);
-        transition:0.5s ease-in-out;
-    }
-    &:after {
-        @include beforeAfter (-2px,6px,scaleX(1),calc(100% - 12px),calc(100% + 4px));
-    }
-    &:hover:after {
-        transform: scaleX(0);
-        transition:0.5s 0.5s ease-in-out;
-    }
-    span {
-        position: relative;
-        z-index: 2;
-    }
+	&:before {
+		@include beforeAfter(
+			6px,
+			-2px,
+			scaleY(1),
+			calc(100% + 4px),
+			calc(100% - 12px)
+		);
+	}
+	&:hover:before {
+		transform: scaleY(0);
+		transition: 0.5s ease-in-out;
+	}
+	&:after {
+		@include beforeAfter(
+			-2px,
+			6px,
+			scaleX(1),
+			calc(100% - 12px),
+			calc(100% + 4px)
+		);
+	}
+	&:hover:after {
+		transform: scaleX(0);
+		transition: 0.5s 0.5s ease-in-out;
+	}
+	span {
+		position: relative;
+		z-index: 2;
+	}
 }
 
-.smallButtonEffect{
-    font-size: 1rem;
-    padding: 0px 20px;
+.smallButtonEffect {
+	font-size: 1rem;
+	padding: 0px 20px;
 }
 
-.toTopButton{
-    position:fixed;
-    opacity:0;
-    transition:0.5s;
-    left: 92%;
-    top: 90%;
+.toTopButton {
+	position: fixed;
+	opacity: 0;
+	transition: 0.5s;
+	left: 92%;
+	top: 90%;
 
-    &.active {
-        z-index: 10001;
-        opacity: 1;
-        &:hover {
-            @include hoverEffect;
-        }
-    }
+	&.active {
+		z-index: 10001;
+		opacity: 1;
+		&:hover {
+			@include hoverEffect;
+		}
+	}
+}
+
+.filter-container {
+	display: flex;
+    justify-content: space-evenly;
+    
+	padding-bottom: 2rem;
+    padding-left: 0;
+    
+    text-transform: uppercase;
+    font-weight: 900;
+
+    li:hover,
+    .active {
+		transition: transform 0.7s;
+        transform: translateY(-5px) scale(1.2);
+        background-color: whitesmoke
+	}
 }
 
 .shakeResume {
-    animation: shake 5s infinite cubic-bezier(.36,.07,.19,.97) both;
-  transform: translate3d(0, 0, 0);
-  perspective: 1000px;
+	animation: shake 5s infinite cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+	transform: translate3d(0, 0, 0);
+	perspective: 1000px;
 }
-
-
-
