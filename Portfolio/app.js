@@ -72,8 +72,8 @@ tabsFilter.forEach((tab) => {
 		});
 		tab.className = "active";
 		// show different Value
-        let values = tab.textContent;
-        console.log(values)
+		let values = tab.textContent;
+		console.log(values);
 		showValues.forEach((show) => {
 			show.style.display = "none";
 			if (show.getAttribute("data-id") === values || values === "All") {
@@ -85,4 +85,11 @@ tabsFilter.forEach((tab) => {
 
 // currentYear
 const currentYear = document.querySelector(".currentYear");
-currentYear.append((new Date().getFullYear()));
+currentYear.append(new Date().getFullYear());
+
+// Close warning container
+const warningContainer = document.querySelector(".old-portfolio");
+const closeWarningButton = document.querySelector(".close-warning");
+closeWarningButton.addEventListener("click", () => {
+	warningContainer.classList.add("no-active");
+});

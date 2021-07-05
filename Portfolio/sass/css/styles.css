@@ -586,6 +586,26 @@ video {
       .project-container-detail-link a:nth-child(2) {
         background-color: #6e5494; }
 
+.old-portfolio {
+  position: absolute;
+  background-color: #fffffff2;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100000;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .old-portfolio h1 {
+    font-size: 5rem;
+    color: red; }
+  .old-portfolio a {
+    font-size: 3rem; }
+  .old-portfolio button {
+    font-size: 3rem; }
+
+.no-active {
+  display: none; }
+
 @media (min-width: 1024px) {
   body .nav-menu {
     flex-direction: column;
